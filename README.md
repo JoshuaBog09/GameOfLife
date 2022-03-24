@@ -9,7 +9,7 @@ ___
 
 ## instructions
 
-Use the mouse button to draw a pattern and hit enter to start of stop the game
+Use the mouse button to draw a pattern and hit enter to start or stop the game
 
 ___
 
