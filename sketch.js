@@ -1,5 +1,5 @@
 /*
-Game of life implementation written in JavaScript - P5js
+Game of life implementation written in JavaScript 
 
 by Joshua Bogaert
 
@@ -12,7 +12,9 @@ let block;
 let columns;
 let rows;
 
-const roundTo = (x) => Math.round(x / block) * block;
+let run = false;
+
+const roundTo = (x) => Math.floor(x / block) * block;
 
 function generateGrid() {
   const grid = new Array();
@@ -103,6 +105,23 @@ function drawGrid(grid) {
   }
 }
 
+function mousePressed() {
+  var val = grid[mouseY_][mouseX_];
+  if (val == 0) {
+    grid[mouseY_][mouseX_] = 1;
+  } else if (val == 1) {
+    grid[mouseY_][mouseX_] = 0;
+  }
+}
+
+function keyPressed() {
+  if (keyCode === ENTER && run == false) {
+    run = true;
+  } else {
+    run = false;
+  }
+}
+
 function setup() {
   block = 50;
   Width = roundTo(displayWidth);
@@ -116,7 +135,7 @@ function setup() {
   // Initialize a n by m grid
   grid = generateGrid();
 
-  // create a pattern
+  // create a starting pattern pattern
   grid[2][2] = 1;
   grid[2][3] = 1;
   grid[2][4] = 1;
@@ -125,7 +144,13 @@ function setup() {
 }
 
 function draw() {
-  drawGrid(grid);
-  grid = gameOfLife(grid);
-  drawGrid(grid);
+  if (run == true) {
+    drawGrid(grid);
+    grid = gameOfLife(grid);
+    drawGrid(grid);
+  } else if (run == false) {
+    drawGrid(grid);
+    mouseX_ = roundTo(mouseX) / block;
+    mouseY_ = roundTo(mouseY) / block;
+  }
 }
