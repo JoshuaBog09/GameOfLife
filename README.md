@@ -10,3 +10,9 @@ ___
 ## instructions
 
 Use the mouse button to draw a pattern and hit enter to start of stop the game
+
+___
+
+## Future ideas
+
+try using object for each cell to change color based on how many alive or dead cells have been there in the past. (history mode)

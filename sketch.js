@@ -106,11 +106,13 @@ function drawGrid(grid) {
 }
 
 function mousePressed() {
-  var val = grid[mouseY_][mouseX_];
-  if (val == 0) {
-    grid[mouseY_][mouseX_] = 1;
-  } else if (val == 1) {
-    grid[mouseY_][mouseX_] = 0;
+  if (run == false){
+    var val = grid[mouseY_][mouseX_];
+    if (val == 0) {
+      grid[mouseY_][mouseX_] = 1;
+    } else if (val == 1) {
+      grid[mouseY_][mouseX_] = 0;
+    }
   }
 }
 
