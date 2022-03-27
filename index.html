@@ -1,11 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script>
-    <script src="sketch.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <meta charset="utf-8" />
-  </head>
-  <body>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script>
+  <script src="./scripts/sketch.js"></script>
+  <title>Game Of Life</title>
+</head>
+<body>
+  <div class = "glass"></div>
+	<div class="wrapper top">
+    <h1>Game of Life</h1>
+    <button class="main" onclick="location.href='./pages/gof.html'" type="button">Sandbox mode</button> 
+		<button class="secondleft secondary" onclick="location.href='./pages/setting.html'" type="button">Load preset</button>
+    <button class="secondright secondary" onclick="location.href='./pages/loadfile.html'" type="button">Setting - Info</button>
+	</div>
+</body>
 </html>

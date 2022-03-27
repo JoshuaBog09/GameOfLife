@@ -1,0 +1,94 @@
+body, html {
+  height:100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  grid-column: 2/4;
+  grid-row: 2;
+  font-size: 72pt;
+  font-family: 'Ubuntu Mono', monospace;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-gap: 10px;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  z-index: 10;
+}
+
+.main {
+  grid-column: 2 / 4;
+  grid-row: 3;
+  display: inline-block;
+  border: 0.15em solid #ffffff;
+  border-radius: 0.75em;
+  background-color: rgba(211,211,211,0.15);
+  text-decoration:none;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: x-large;
+  font-weight:5px;
+  color: #ffffff;
+  text-align:center;
+  transition: all 0.75s;
+}
+
+.main:hover{
+  color:#000000;
+  background-color: #ffffff;
+  border: none;
+}
+
+.secondleft {
+  grid-column: 2 / 3;
+  grid-row: 4;
+}
+
+.secondright {
+  grid-column: 3 / 4;
+  grid-row: 4;
+}
+
+.secondary{
+  display: inline-block;
+  border: 0.15em solid #ffffff;
+  border-radius: 0.5em;
+  background-color: rgba(211,211,211,0.15);
+  text-decoration:none;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: x-large;
+  font-weight:3px;
+  color: #ffffff;
+  text-align:center;
+  transition: all 0.5s;
+}
+
+.secondary:hover{
+  color:#000000;
+  background-color: #ffffff;
+  border: none;
+}
+
+.glass{
+  height:100%;
+  width: 100%;
+  position: absolute;
+  z-index: -2;
+  background-color: rgba(99, 122, 197, 0.55);
+  backdrop-filter: blur(5px);
+}

@@ -11,6 +11,8 @@ let Height;
 let block;
 let columns;
 let rows;
+let spacingH;
+let spacingV;
 
 let run = false;
 
@@ -100,7 +102,7 @@ function drawGrid(grid) {
       } else if (value == 1) {
         fill(35);
       }
-      square(j * block, i * block, block);
+      square((j * block) + spacingH, (i * block) + spacingV, block);
     }
   }
 }
@@ -126,12 +128,16 @@ function keyPressed() {
 
 function setup() {
   block = 50;
-  Width = roundTo(displayWidth);
-  Height = roundTo(displayHeight);
+  Width = roundTo(windowWidth);
+  Height = roundTo(windowHeight);
   columns = Width / block;
   rows = Height / block;
+  spacingH = (windowWidth - Width) / 2;
+  spacingV = (windowHeight - Height) / 2;
 
-  createCanvas(Width, Height);
+  canvas = createCanvas(windowWidth, windowHeight);
+  canvas.position(0,0);
+  canvas.style("z-index","-3");
   frameRate(15);
 
   // Initialize a n by m grid
@@ -152,7 +158,7 @@ function draw() {
     drawGrid(grid);
   } else if (run == false) {
     drawGrid(grid);
-    mouseX_ = roundTo(mouseX) / block;
-    mouseY_ = roundTo(mouseY) / block;
+    mouseX_ = roundTo(mouseX - spacingH) / block;
+    mouseY_ = roundTo(mouseY - spacingV) / block;
   }
 }
