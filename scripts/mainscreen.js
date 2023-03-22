@@ -119,7 +119,7 @@ function setup() {
   canvas = createCanvas(windowWidth, windowHeight);
   canvas.position(0,0);
   canvas.style("z-index","-3");
-  frameRate(15);
+  frameRate(20);
 
   // Initialize a n by m grid
   grid = generateGrid();

@@ -14,6 +14,7 @@ h1 {
   grid-column: 2/4;
   grid-row: 2;
   font-size: 72pt;
+  font-size: 6vw;
   font-family: 'Ubuntu Mono', monospace;
   color: #ffffff;
   display: flex;
@@ -45,13 +46,14 @@ h1 {
   font-weight:5px;
   color: #ffffff;
   text-align:center;
-  transition: all 0.75s;
+  transition: all 0.25s;
 }
 
 .main:hover{
   color:#000000;
   background-color: #ffffff;
   border: none;
+  font-size: xx-large;
 }
 
 .secondleft {
@@ -75,13 +77,14 @@ h1 {
   font-weight:3px;
   color: #ffffff;
   text-align:center;
-  transition: all 0.5s;
+  transition: all 0.25s;
 }
 
 .secondary:hover{
   color:#000000;
   background-color: #ffffff;
   border: none;
+  font-size: xx-large;
 }
 
 .glass{
