@@ -1,0 +1,65 @@
+* {
+  margin: 0px;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 12px;
+  margin: 0px;
+  background-color: rgb(38, 36, 36);
+  color: aliceblue;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  /* border: 1px solid; */
+  font-size: x-large;
+  font-weight: bold;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.menu_btns{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.help{
+  margin-left: 2vw;
+}
+
+.imp{
+  font-size: 2.0em;
+}
+
+.presets_wrapper{
+  display: flex;
+  justify-content: center;
+}
+
+.presets{
+  display: flex;
+  width: 80%;
+  border: 1px solid black;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+.card {
+  box-sizing: border-box;
+  background-color: darkblue;
+  margin: 25px;
+  width: 500px;
+  height: 250px;
+  border-radius: 25px;
+  font-size: xx-large;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
