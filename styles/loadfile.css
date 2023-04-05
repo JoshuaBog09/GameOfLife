@@ -2,12 +2,22 @@
   margin: 0px;
 }
 
+html {
+  background-color:black;
+}
+
 .header-wrapper {
   display: flex;
   justify-content: center;
   padding: 12px;
   margin: 0px;
   background-color: rgb(38, 36, 36);
+  color: aliceblue;
+  text-decoration: none;
+}
+
+#home{
+  text-decoration: none;
   color: aliceblue;
 }
 
@@ -50,16 +60,53 @@
   align-items: center;
 }
 
-.card {
+.preset_card {
+  display: flex;
   box-sizing: border-box;
-  background-color: darkblue;
+  /* background-color: darkblue; */
   margin: 25px;
   width: 500px;
   height: 250px;
   border-radius: 25px;
   font-size: xx-large;
   color: aliceblue;
+  /* border: 1px aliceblue solid; */
+}
+
+.icon_wrapper{
   display: flex;
+  box-sizing: border-box;
+  width: 35%;
+  height: 100%;
+  background-color: rgba(240, 248, 255, 0.75);
+  border: 2px aliceblue solid;
+  border-radius: 25px 0px 0px 25px;
   justify-content: center;
   align-items: center;
+}
+
+.preset{
+  display: flex;
+  box-sizing: border-box;
+  width: 65%;
+  height: 100%;
+  background-color: rgba(240, 248, 255, 0.75);
+  border: 2px aliceblue solid;
+  border-radius: 0px 25px 25px 0px;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon{
+  width: 75%;
+  height: 0;
+  padding-top: 75%;
+  background-color: #ccc;
+  position: relative;
+}
+
+.icon_content{
+  position: absolute;
+  top: 0;
+  left: 0;
 }
