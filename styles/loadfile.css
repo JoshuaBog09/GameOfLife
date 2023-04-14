@@ -56,7 +56,7 @@ html {
 
 .presets{
   display: flex;
-  width: 80%;
+  width: 90%;
   border: 1px solid black;
   flex-wrap: wrap;
   justify-content: center;
@@ -67,14 +67,12 @@ html {
 .preset_card {
   display: flex;
   box-sizing: border-box;
-  /* background-color: darkblue; */
   margin: 25px;
-  width: 500px;
-  height: 250px;
+  width: 350px;
+  height: 150px;
   border-radius: 25px;
   font-size: xx-large;
   color: aliceblue;
-  /* border: 1px aliceblue solid; */
 }
 
 .icon_wrapper{
@@ -82,9 +80,10 @@ html {
   box-sizing: border-box;
   width: 35%;
   height: 100%;
-  background-color: rgba(240, 248, 255, 0.75);
-  border: 2px aliceblue solid;
-  border-radius: 25px 0px 0px 25px;
+  background-color: #fafafa;
+  border: 2px #fafafa solid;
+  z-index: 1;
+  border-radius: 1rem;
   justify-content: center;
   align-items: center;
 }
@@ -92,11 +91,12 @@ html {
 .preset{
   display: flex;
   box-sizing: border-box;
-  width: 65%;
+  margin-left: -5%;
+  border-radius: 0rem 1rem 1rem 0rem;
+  width: 70%;
   height: 100%;
-  background-color: rgba(240, 248, 255, 0.75);
-  border: 2px aliceblue solid;
-  border-radius: 0px 25px 25px 0px;
+  background-color: rgb(42, 130, 207);
+  border: 2px #fafafa solid;
   justify-content: center;
   align-items: center;
 }
@@ -111,7 +111,7 @@ html {
 
 .icon_content{
   display: flex;
-  border: solid red 1px;
+  border: solid #000 1px;
   position: absolute;
   top: 0;
   left: 0;
